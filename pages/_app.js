@@ -1,7 +1,17 @@
 import '../styles/globals.css'
+import { Provider as CategoryProvider } from "../context/CategoriesContext";
+import Layout from '../components/Layout/Layout'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+
+  )
 }
+
+
 
 export default MyApp
